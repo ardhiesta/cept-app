@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.djakaumbarawurung.persipantestcept.Activity_Cek_ListeningA">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvSoalCekListening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[pertanyaan ke-x]"
+                android:textColor="#000000"
+                android:textSize="22sp"  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Your answer is :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvJawabanUserCekListening"
+                android:text="[jawaban user]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="The right answer is :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvKunciCekListening"
+                android:text="[kunci jawaban]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Explanation :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPenjelasanCekListening"
+                android:text="[penjelasan listening]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:id="@+id/btnBackCekListening"
+            android:onClick="backCekListening"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:id="@+id/btnNextCekListening"
+            android:onClick="nextCekListening"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

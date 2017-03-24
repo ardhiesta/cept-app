@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.djakaumbarawurung.persipantestcept.ActivityCekJawabanReading"
+    android:background="#FFFFCC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/svCekReadingTop"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNarasiCekReading"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:text="[narasi reading]"/>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/svCekReadingTop"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvSoalCekReading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[pertanyaan reading]"
+                android:textColor="#000000"
+                android:textSize="22sp"  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Your answer is :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvJawabanUserCekReading"
+                android:text="[jawaban user]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="The right answer is :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvKunciCekReading"
+                android:text="[kunci jawaban]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Explanation :"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPenjelasanCekReading"
+                android:text="[penjelasan reading]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:onClick="tampilkanBackAktivitasUserReading"
+            android:id="@+id/btnBackCekReading"
+            android:textSize="25dp"
+            android:background="#FF9900"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:onClick="tampilkanNextAktivitasUserReading"
+            android:id="@+id/btnNextCekReading"
+            android:textSize="25dp"
+            android:background="#FF9900"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

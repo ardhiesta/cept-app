@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CEPT_djaka</string>
+    <string name="title_activity_activity_hasil_reading">ActivityHasilReading</string>
+    <string name="title_activity_activity_hasil_listening">ActivityHasilListening</string>
+    <string name="title_activity_activity_cek_jawaban_reading">ActivityCekJawabanReading</string>
+    <string name="SoalLIsteningB1">Lithuania is very</string>
+    <string name="SoalLIsteningB2">in the winter. The snow falls from the beginning of November to the beginnging
+     of april. The good thing about snow is that you have white atmosphere everywhere after miserable autum.
+     When people walk in snow, they are</string>
+    <string name="SoalListeningB3">Belgium in winter is realy miserable.its raining all the time. People look depresed since they can just looka at
+    </string>
+    <string name="SoalListeningB4">all the time when they are walking outside. The temperature almost reached minus 26 in Lithuania in winter time.
+    it was really freezing so that people</string>
+    <string name="SoalListeningB5">of their house. When its so cold, it takes a lot of money to heat the house. Aiste father
+    combined three heating parts with two different kinds of wood and also natural gas from central heating system. it was really</string>
+    <string name="SoalListeningB6">and expensive heating system.</string>
+</resources>

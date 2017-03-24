@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityQuiz"
+    android:background="#FFFFCC">
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="GRAMMAR"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:onClick="tampilkanSoalGrammar"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:background="#3300FF"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="READING"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:onClick="paketSoalReading"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:background="#FF9900"
+        android:layout_marginBottom="5dp" />
+
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="Listening"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:onClick="paketSoalListening"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:background="#3300FF"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="Listening B"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:onClick="paketSoalListeningB"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:background="#FF9900"/>
+
+
+
+</RelativeLayout>

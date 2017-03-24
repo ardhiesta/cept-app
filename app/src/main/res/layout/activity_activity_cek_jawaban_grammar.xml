@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.djakaumbarawurung.persipantestcept.ActivityCekJawabanGrammar"
+    android:background="#FFFFCC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- text view untuk menampilkan soal kuis grammar yang telah dikerjakan user -->
+            <TextView
+                android:id="@+id/tvSoalCekGrammar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[pertanyaan]"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your answer is :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- text view untuk menampilkan jawaban yang telah dipilih user -->
+            <TextView
+                android:id="@+id/tvJawabanUserCekGrammar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="[jawaban user]"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The right answer is :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- text view untuk menampilkan jawaban yang benar -->
+            <TextView
+                android:id="@+id/tvKunciCekGrammar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="[kunci jawaban]"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explanation :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- text view untuk menampilkan penjelasan -->
+            <TextView
+                android:id="@+id/tvPenjelasanCekGrammar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[penjelasan grammar]"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!-- button untuk menampilkan history pertanyaan sebelumnya -->
+        <Button
+            android:id="@+id/btnBackCekGrammar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="backCekGrammar"
+            android:text="BACK"
+            android:background="#FF9900"
+            android:allowUndo="true"
+            android:clickable="false"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp" />
+
+        <!-- button untuk menampilkan history pertanyaan selanjutnya -->
+        <Button
+            android:id="@+id/btnNextCekGrammar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="nextCekGrammar"
+            android:text="Next"
+            android:background="#FF9900"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+

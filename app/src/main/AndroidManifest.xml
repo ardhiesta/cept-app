@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.djakaumbarawurung.persipantestcept">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ActivityHome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityQuiz" />
+        <activity android:name=".ActivityKuisGrammar" />
+        <activity android:name=".ActivityKuisReading" />
+        <activity android:name=".ActivityAbout" />
+        <activity android:name=".ActivityHasil" />
+        <activity android:name=".ActivityListening" />
+        <activity android:name=".ActivityCekJawabanReading" />
+        <activity android:name=".ActivityHasilReading" />
+        <activity android:name=".ActivityListeningPartB" />
+        <activity android:name=".ActivityCekJawabanListening" />
+        <activity android:name=".ActivityCekJawabanListeningB" />
+        <activity android:name=".ActivityCekJawabanGrammar" />
+        <activity android:name=".ActivityKuisReading2" />
+        <activity android:name=".Activity_Cek_ListeningA" />
+        <activity android:name=".ActivityTambahSoalgrammar" />
+        <activity android:name=".AdminMenu" />
+        <activity android:name=".CRUD" />
+        <activity android:name=".TambahReading" />
+        <activity android:name=".CRUDnarasi" />
+        <activity android:name=".AdminGrammarActivity"></activity>
+    </application>
+
+</manifest>
