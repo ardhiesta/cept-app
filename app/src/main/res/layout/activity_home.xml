@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="admin grammar"
         android:layout_below="@+id/button2"
-        android:onClick="testAmbilDataGrammar"
+        android:onClick="showAdminGrammar"
         />
 
     <TextView

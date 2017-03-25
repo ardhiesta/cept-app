@@ -16,10 +16,25 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Pertanyaan: "
+                />
+
+            <TextView
                 android:id="@+id/tv_soal_grammar_cv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[soal grammar]" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Jawaban: "
+                android:layout_marginTop="10dp"
+                />
 
             <TextView
                 android:id="@+id/tv_jawaban_grammar_cv"
@@ -28,10 +43,26 @@
                 android:text="[jawaban]" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Penjelasan: "
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
                 android:id="@+id/tv_penjelasan_grammar_cv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[penjelasan]" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Opsi: "
+                android:layout_marginTop="10dp"
+                />
 
             <TextView
                 android:id="@+id/tv_opsi_grammar_cv"

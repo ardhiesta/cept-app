@@ -182,4 +182,8 @@ public class ActivityHome extends AppCompatActivity {
         System.out.println("");
     }
 
+    public void showAdminGrammar(View view){
+        Intent intent = new Intent(ActivityHome.this, AdminGrammarActivity.class);
+        startActivity(intent);
+    }
 }
