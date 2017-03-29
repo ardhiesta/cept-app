@@ -20,10 +20,12 @@ public class GrammarAdapter extends
         RecyclerView.Adapter<GrammarAdapter.ViewHolder> {
     // Store a member variable for the grammar data
     private List<Grammar> mGrammars;
+    private Context mContext;
 
     // Pass in the grammar array into the constructor
-    public GrammarAdapter(List<Grammar> grammars) {
+    public GrammarAdapter(List<Grammar> grammars, Context context) {
         mGrammars = grammars;
+        this.mContext = context;
     }
 
     // Provide a direct reference to each of the views within a data item
@@ -41,12 +43,13 @@ public class GrammarAdapter extends
         public ViewHolder(View itemView) {
             // Stores the itemView in a public final member variable that can be used
             // to access the context from any ViewHolder instance.
-            super(itemView);
+            super(itemView); // (2)
+            itemView.setLongClickable(true);
 
-            tvSoalGrammar = (TextView) itemView.findViewById(R.id.tv_soal_grammar_cv);
-            tvJawabanGrammar = (TextView) itemView.findViewById(R.id.tv_jawaban_grammar_cv);
-            tvPenjelasanGrammar = (TextView) itemView.findViewById(R.id.tv_penjelasan_grammar_cv);
-            tvOpsiGrammar = (TextView) itemView.findViewById(R.id.tv_opsi_grammar_cv);
+            tvSoalGrammar = (TextView) itemView.findViewById(R.id.tvSoalGrammarCv);
+            tvJawabanGrammar = (TextView) itemView.findViewById(R.id.tvJawabanGrammarCv);
+            tvPenjelasanGrammar = (TextView) itemView.findViewById(R.id.tvPenjelasanGrammarCv);
+            tvOpsiGrammar = (TextView) itemView.findViewById(R.id.tvOpsiGrammarCv);
         }
     }
 
@@ -62,7 +65,7 @@ public class GrammarAdapter extends
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int position) {
+    public void onBindViewHolder(final ViewHolder viewHolder, int position) {
         Grammar grammar = mGrammars.get(position);
 
         TextView tvSoalGrammar = viewHolder.tvSoalGrammar;
@@ -79,11 +82,19 @@ public class GrammarAdapter extends
         }
         TextView tvOpsiGrammar = viewHolder.tvOpsiGrammar;
         tvOpsiGrammar.setText(opsi);
+
+
     }
 
     @Override
     public int getItemCount() {
         return mGrammars.size();
+    }
+
+    public void removeAt(int position) {
+        mGrammars.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mGrammars.size()-position);
     }
 
 }

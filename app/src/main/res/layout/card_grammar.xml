@@ -12,18 +12,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="vertical">
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            >
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="Pertanyaan: "
-                />
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_soal_grammar_cv"
+                android:id="@+id/tvSoalGrammarCv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[soal grammar]" />
@@ -31,13 +31,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="Jawaban: "
                 android:layout_marginTop="10dp"
-                />
+                android:text="Jawaban: "
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_jawaban_grammar_cv"
+                android:id="@+id/tvJawabanGrammarCv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[jawaban]" />
@@ -45,13 +44,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="Penjelasan: "
                 android:layout_marginTop="10dp"
-                />
+                android:text="Penjelasan: "
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_penjelasan_grammar_cv"
+                android:id="@+id/tvPenjelasanGrammarCv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[penjelasan]" />
@@ -59,13 +57,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="Opsi: "
                 android:layout_marginTop="10dp"
-                />
+                android:text="Opsi: "
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_opsi_grammar_cv"
+                android:id="@+id/tvOpsiGrammarCv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[opsi]" />

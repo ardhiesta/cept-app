@@ -38,6 +38,19 @@ public class DataSource_PenghubungTabel extends AppCompatActivity {
         databaseHelper.close();
     }
 
+    // ambil id soal grammar berdasarkan soalnya
+    public int getIdGrammarBySoal(String soal){
+        int id = 0;
+        Cursor cursor = database.rawQuery("select * from "+SQLiteHelper.TABLE_GRAMMAR
+                +" where "+SQLiteHelper.COLUMN_PERTANYAAN_GRAMMAR+" = ? ", new String[]{soal});
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()){
+            id = cursor.getInt(0);
+            cursor.moveToNext();
+        }
+        return id;
+    }
+
     // ambil data grammar
     public ArrayList<Grammar> ambilDataSoalGrammar(){
         ArrayList<Grammar> grammarArrayList = new ArrayList<>();
